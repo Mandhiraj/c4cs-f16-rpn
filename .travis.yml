@@ -1,5 +1,13 @@
 language: python
 python:
   - "3.5"
+install:
+  - pip install python-coveralls
+  - pip install coverage
+  - pip install nose
 # testing
-script: make test
+script:
+  - python setup.py install
+  - nosetests --with--coverage
+after_success:
+  - coveralls
