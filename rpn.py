@@ -7,6 +7,7 @@ operators = {
 	'/': operator.truediv,
 	'^': operator.pow,
 	'&': operator.and_,
+	'|': operator.or_,
 }
 
 def calculate(myarg):
